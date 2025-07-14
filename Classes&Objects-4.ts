@@ -34,3 +34,15 @@ class Music {
 }
 let M1 = new Music("ye tune kya kiya....","neetesh","",256,false)
 console.log("M1 is ruuning : ", M1);
+
+// this keyword---------> only include when you use class inside propery in any function access variables
+
+class Bottlemaker{
+    constructor(public name:string){
+        this.name = name
+    }
+
+}
+let bn = new Bottlemaker("milton")
+
+// private protected--------->
