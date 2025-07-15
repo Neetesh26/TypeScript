@@ -20,7 +20,26 @@ class college{
 class student extends college{
     constructor(name:string, clgname:string){
         super(name);
-        this.clgname = clgname; //<------❌ Accessing private property from parent class
+       // this.clgname = clgname; //<------❌ Accessing private property from parent class
     }
     
 }
+
+
+
+class BankAccount {
+  private balance: number = 1000;
+
+  private calculateInterest() {
+    return this.balance * 0.05;
+  }
+
+  public getBalance() {
+    return this.balance;
+  }
+}
+
+const account = new BankAccount();
+// account.balance;         ❌ Error: Property 'balance' is private
+// account.calculateInterest(); ❌ Error
+console.log(account.getBalance()); // ✅ Works
