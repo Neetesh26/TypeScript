@@ -38,3 +38,23 @@ function newswwwwww(...args:string[]) {
     
 }
 newswwwwww("neetesh" , "ram","jay" , "ajay")
+
+//overloading------>
+
+function jayhoo(a:string):void;
+function jayhoo(a:string, b:number):number;
+
+function jayhoo(a:any, b?:any) {
+    if (typeof a === "string" && b === undefined) {
+        console.log("hey fn 1 calling");
+        
+    }
+    if(typeof a === "string" && typeof b==="number"){
+        return  123
+    }
+    else throw new Error("something went wrong");
+    
+    
+}
+jayhoo("hello")
+jayhoo("hello",26)
