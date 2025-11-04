@@ -52,7 +52,7 @@ if (typeof n === "string") {
 }
 
 //void
-function abc():string {
+function abc1():string {
     return "neetesh"
 }
 function abcd():void {
