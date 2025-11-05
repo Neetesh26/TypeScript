@@ -3,7 +3,7 @@ declare class College {
     branch: string;
     semester: number;
     RollNo: number;
-    static UsersData: any[];
+    private static UsersData;
     constructor(name: string, branch: string, semester: number, RollNo: number);
     LoginCredintial(studentName: string, password: number): void;
     getStudentInfo(): void;

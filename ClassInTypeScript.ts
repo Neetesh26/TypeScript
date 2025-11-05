@@ -4,7 +4,7 @@ class College {
     semester:number
     RollNo:number
 
-static UsersData:any[] = []
+private static UsersData:any[] = []
 
     constructor(name:string, branch:string,semester:number,RollNo:number){
         this.studentName = name
