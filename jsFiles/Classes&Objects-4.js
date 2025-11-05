@@ -1,13 +1,13 @@
 "use strict";
 class Bottle {
-    constructor() {
-        this.Cname = "bisleri";
-        this.prices = 259;
-    }
+    Cname = "bisleri";
+    prices = 259;
 }
 let b1 = new Bottle();
 console.log("b1 is: ", b1);
 class HumanMaker {
+    name;
+    isHandsome;
     constructor(name, isHandsome) {
         this.name = name;
         this.isHandsome = isHandsome;
@@ -15,6 +15,10 @@ class HumanMaker {
 }
 let h1 = new HumanMaker("neetesh", true);
 class BottleMaker {
+    brand;
+    price;
+    color;
+    material;
     constructor(brand, price, color, material) {
         this.brand = brand;
         this.price = price;
@@ -26,6 +30,11 @@ let BT1 = new BottleMaker("Milton", 459, "black", "plastic");
 let BT2 = new BottleMaker("fabric", 359, "gray", "plastic");
 console.log("BT2 is running :", BT2);
 class Music {
+    name;
+    artist;
+    thumbnail;
+    length;
+    free;
     constructor(name, artist, thumbnail = "something...", length, free) {
         this.name = name;
         this.artist = artist;
@@ -41,6 +50,7 @@ let M1 = new Music("ye tune kya kiya....", "neetesh", "", 256, false);
 console.log("M1 is ruuning : ", M1);
 // this keyword---------> only include when you use class inside propery in any function access variables
 class Bottlemaker {
+    name;
     constructor(name) {
         this.name = name;
         this.name = name;

@@ -1,5 +1,6 @@
 "use strict";
 class Car {
+    brand;
     constructor(brand) {
         this.brand = brand;
     }

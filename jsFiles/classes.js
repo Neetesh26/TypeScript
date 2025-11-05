@@ -37,12 +37,13 @@
 // // console.log();
 // Inheritance-----------------------------> ✅
 class department {
+    num = 1;
+    name;
+    // private employee : string[] =[];   // private is only use in the class but not use inherit class
+    employee = []; // protected is  use in the class and inherit class as well...
     // private readonly id : number;
     // employee : string[]
     constructor(n) {
-        this.num = 1;
-        // private employee : string[] =[];   // private is only use in the class but not use inherit class
-        this.employee = []; // protected is  use in the class and inherit class as well...
         this.name = n;
         this.employee = [];
         // this.id = id;
@@ -58,6 +59,7 @@ class department {
     }
 }
 class AccoountingDepart extends department {
+    reports;
     // reports : string[] = []
     constructor(reports) {
         super("accounting");

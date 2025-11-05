@@ -1,5 +1,6 @@
 "use strict";
 class btl {
+    name;
     constructor(name) {
         this.name = name;
         console.log(this.name);
@@ -12,9 +13,10 @@ let bn1 = new btl("milton");
 // bn1.name="jkjh" ❌ private object se variable access nhi kr sakta
 bn1.changing();
 class college {
+    name;
+    clgname = "NIT";
     constructor(name) {
         this.name = name;
-        this.clgname = "NIT";
     }
 }
 class student extends college {
@@ -24,9 +26,7 @@ class student extends college {
     }
 }
 class BankAccount {
-    constructor() {
-        this.balance = 1000;
-    }
+    balance = 1000;
     calculateInterest() {
         return this.balance * 0.05;
     }

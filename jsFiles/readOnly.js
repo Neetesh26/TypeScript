@@ -1,8 +1,9 @@
 "use strict";
 class Circle {
+    radius;
+    pi = 3.14;
     constructor(radius) {
         this.radius = radius;
-        this.pi = 3.14;
     }
     area() {
         return this.pi * this.radius * this.radius;
