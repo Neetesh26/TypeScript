@@ -19,7 +19,7 @@ private static UsersData:any[] = []
         
        if (studentName === this.studentName && password === this.RollNo) {
       console.log("✅ Student login successful");
-      this.getStudentInfo();
+      this.getStudentInfo()
     } else {
       console.log("❌ Invalid Credentials... Try again");
     }
@@ -68,5 +68,6 @@ c11.LoginCredintial("Neetesh" , 12)
 c13.LoginCredintial("jaya" , 28)
 c12.LoginCredintial("ravi" , 3)
 c11.Admin(12)
+// c11.getStudentInfo()
 //  console.log(c11.LoginCredintial("Neetesh- prajapti" , 12));
  
