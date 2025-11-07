@@ -6,7 +6,9 @@ declare class College {
     private static UsersData;
     constructor(name: string, branch: string, semester: number, RollNo: number);
     LoginCredintial(studentName: string, password: number): void;
+    get UniqueUserID(): string;
     getStudentInfo(): void;
+    set UsersDataSet(val: any);
     Admin(password: number): void;
 }
 declare const c11: College;

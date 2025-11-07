@@ -21,16 +21,22 @@ class College {
             console.log("❌ Invalid Credentials... Try again");
         }
     }
+    get UniqueUserID() {
+        return "@" + `${this.studentName}`;
+    }
     getStudentInfo() {
         var info = {
-            name: this.studentName,
-            Branch: this.branch,
+            name: this.UniqueUserID, // using gettter
+            Branch: this.UsersDataSet = this.branch, // using setter
             Semester: this.semester,
             RollNo: this.RollNo
         };
         // console.log(info) 
         College.UsersData.push(info);
         console.log("Data Added in db : ", info);
+    }
+    set UsersDataSet(val) {
+        this.branch = "Techie" + val;
     }
     Admin(password) {
         if (password === 12) {
@@ -46,9 +52,9 @@ class College {
         }
     }
 }
-const c11 = new College("Neetesh", "CSE", 7, 12);
-const c12 = new College("ravi", "CSE", 8, 3);
-const c13 = new College("jaya", "CSE", 7, 28);
+const c11 = new College("Neetesh", "Computer Science", 7, 12);
+const c12 = new College("ravi", "Bussiness Analatics", 8, 3);
+const c13 = new College("jaya", "Charted Accounting", 7, 28);
 // console.log(c11);
 //  const login = 
 c11.LoginCredintial("Neetesh- prajapti", 12);
