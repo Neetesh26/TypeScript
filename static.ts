@@ -16,5 +16,5 @@ class sheryChild extends Shery {
 //  sc1.getRandomNumber()  // isnt call by inherit class objects ❌static keyword are merged
 
 
-// Shery.getRandomNumber()   // static keyword are call by class name ✅
-// console.log("Shery version is : ", Shery.version);
+Shery.getRandomNumber()   // static keyword are call by class name ✅
+console.log("Shery version is : ", Shery.version);
