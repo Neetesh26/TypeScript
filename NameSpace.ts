@@ -1,6 +1,4 @@
-// nameSpace is like a group of related code that helps to organize and avoid name conflicts in larger codebases.
-
-
+// nameSpace is like a group of related code that helps to organize and avoid name conflicts in larger
 namespace DataInfo {
     class Student {
         name: string;
