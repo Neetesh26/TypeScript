@@ -1,6 +1,6 @@
 // nameSpace is like a group of related code that helps to organize and avoid name conflicts in larger
 namespace DataInfo {
-    class Student {
+   export class Student {
         name: string;
         age: number;
         constructor(name: string, age: number) {
@@ -8,7 +8,7 @@ namespace DataInfo {
             this.age = age;
         }
     }
-    function getInfo():void{
+   export function getInfo():void{
         console.log("This is a function inside the DataInfo namespace.");
     }
     let student1 = new Student("Alice", 21);
